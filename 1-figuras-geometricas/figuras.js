@@ -50,3 +50,34 @@ function areaCirculo(radio) {
 }
 
 console.groupEnd();
+
+
+
+
+/**
+ * Reto: matemáticas con JavaScript
+ */
+
+// Triángulo isósceles
+
+/*En este ejercicio debes crear una función para calcular la altura de un triángulo isósceles.
+
+    - La función debe recibir, como parámetros, la longitud de los 3 lados del triángulo.
+    - La función debe validar que la longitud de los 3 lados del triángulo corresponden a un triángulo isósceles.
+    - La función debe retornar la altura del triángulo.
+*/
+
+//Solución
+
+// Altura Triángulo Isósceles
+function alturaTriangulo(lado1, lado2, base) {
+    if (lado1 == lado2) {
+        const altura = Math.sqrt(Math.pow(lado1, 2) - Math.pow(base/2, 2));
+        return altura;
+    } else {
+        return 'Los lados no son iguales';
+    }
+}
+
+// Ejemplo
+alturaTriangulo(4, 4, 3); // 3.7080992435478315
